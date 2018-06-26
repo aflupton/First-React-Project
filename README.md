@@ -1,10 +1,10 @@
 # Practice with React
-### Help Queue Practice App
-#### _Andrew Lupton, 6/25/2018_
+## Help Queue Practice App
+#### _Andrew Lupton, 6/26/2018_
 
 ## Description
 
-_This app uses the Reach library to render a basic app for keeping track of tickets in a help queue like the one used at Epicodus._
+_This app uses the React library to render a basic app for keeping track of tickets in a help queue like the one used at Epicodus._
 
 
 ## Known Bugs
