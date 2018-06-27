@@ -3,7 +3,12 @@ import React from 'react';
 function NewTicketForm(){
   return (
     <div>
-      <form>
+      <style jsx>{`
+        .form {
+          width: 50%;
+        }
+      `}</style>
+      <form className="form">
         <input
           type='text'
           id='names'
@@ -12,7 +17,7 @@ function NewTicketForm(){
           type='text'
           id='location'
           placeholder='Location'/>
-        <textarea
+        <input
           id='issue'
           placeholder='Describe your issue.'/>
         <button type='submit'>Help!</button>
