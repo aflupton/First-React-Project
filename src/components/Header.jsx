@@ -4,14 +4,14 @@ function Header() {
   return (
     <div>
       <style jsx>{`
-        div {
+        .header {
           color: #fff;
           background-color: grey;
           padding-left: 5px;
-          width: 75%;
+          font-size: 40pt;
         }
       `}</style>
-      <h1>Help Queue:</h1>
+      <h1 className="header">Help Queue:</h1>
     </div>
   );
 }

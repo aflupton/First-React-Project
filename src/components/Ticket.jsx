@@ -10,9 +10,15 @@ function Ticket(props) {
           background-color:#F08080;
           color:#fff;
         }
+        .issue {
+          font-style: italic;
+        }
+        .subheader {
+          font-size: 16pt;
+        }
       `}</style>
-      <h3>{props.location} - {props.names}</h3>
-      <p><em>{props.issue}</em></p>
+      <h3 className="subheader">{props.location} - {props.names}</h3>
+      <p className="issue">{props.issue}</p>
       <hr/>
     </div>
   );
