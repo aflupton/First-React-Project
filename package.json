@@ -12,8 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.1.1",
-    "popper.js": "^1.14.3",
+    "install": "^0.12.1",
+    "npm": "^6.1.0",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -28,9 +28,11 @@
     "eslint": "^5.0.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-react": "^7.10.0",
+    "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.29.0",
     "react-hot-loader": "^3.0.0-beta.7",
-    "webpack": "^3.4.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.12.0",
     "webpack-dev-server": "^2.5.0"
   }
 }
