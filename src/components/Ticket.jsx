@@ -6,10 +6,6 @@ function Ticket(props) {
   return (
     <div>
       <style global jsx>{`
-        div {
-          background-color:#F08080;
-          color:#fff;
-        }
         .issue {
           font-style: italic;
         }

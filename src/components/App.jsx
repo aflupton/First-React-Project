@@ -9,12 +9,14 @@ function App(){
   var myStyledComponentStyles = {
     backgroundColor: '#F08080',
     fontFamily: 'sans-serif',
-    paddingTop: '25px',
-    marginLeft: '15px',
-    marginRight: '15px'
   };
   return (
-    <div style={myStyledComponentStyles}>
+    <div global jsx style={myStyledComponentStyles}>
+      <style>{`
+          div {
+            padding: 10px;
+          }
+    `}</style>
       <Header/>
       <Switch>
         <Route exact path='/' component={TicketList} />
