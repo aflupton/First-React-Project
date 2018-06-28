@@ -11,7 +11,7 @@ function App(){
     fontFamily: 'sans-serif',
   };
   return (
-    <div global jsx style={myStyledComponentStyles}>
+    <div style={myStyledComponentStyles}>
       <style>{`
           div {
             padding: 10px;
