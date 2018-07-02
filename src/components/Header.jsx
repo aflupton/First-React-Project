@@ -10,15 +10,15 @@ function Header() {
         }
         .header-btn {
           background-color: inherit;
-          border: 2px, lightgrey;
+          border: solid 2px #;
           opacity: 0.5;
         }
         .header-btn:hover {
           opacity: 1;
         }
       `}</style>
-      <h1 className="header display-3">Help Queue:</h1>
-      <Link className="header-btn btn btn-light" to="/">Home</Link> | <Link className="header-btn btn btn-light" to="/newticket">Create Ticket</Link>
+      <h1 className='header display-3'>Help Queue:</h1>
+      <Link className='header-btn btn btn-light' to='/'>Home</Link> | <Link className='header-btn btn btn-light' to='/newticket'>Create Ticket</Link>
     </div>
   );
 }

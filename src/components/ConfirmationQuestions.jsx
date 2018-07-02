@@ -8,7 +8,7 @@ function ConfirmationQuestions(props) {
 
       `}</style>
       <p>Have you gone through all the steps on the Learn How to Program debugging lesson?</p>
-      <button className="act-btn btn btn-light" onClick={props.onTroubleShootingConfirmation}>Yes</button>
+      <button className='act-btn btn btn-light' onClick={props.onTroubleShootingConfirmation}>Yes</button>
     </div>
   );
 }

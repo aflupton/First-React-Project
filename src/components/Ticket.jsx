@@ -13,8 +13,8 @@ function Ticket(props) {
           font-size: 16pt;
         }
       `}</style>
-      <h3 className="subheader">{props.location} - {props.names}</h3>
-      <p className="issue">{props.issue}</p>
+      <h3 className='subheader'>{props.location} - {props.names}</h3>
+      <p className='issue'>{props.issue}</p>
       <hr/>
     </div>
   );
