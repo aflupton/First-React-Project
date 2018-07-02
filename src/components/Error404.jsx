@@ -14,11 +14,12 @@ function Error404(props){
         div {
           padding-left: 20px;
         }
+        h3 {
+          margin-top: 25px;
+        }
       `}</style>
-      <h3>The page you are looking for is still brewing.</h3>
-      <br/>
       <img className='image' src={CoffeeBrewing} />
-      <br/>
+      <h3 className="">The page you are looking for is still brewing.</h3>
       <h4>Would you like to return <Link to='/'>home</Link> instead?</h4>
 
     </div>
