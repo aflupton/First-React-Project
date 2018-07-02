@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './Header';
 import TicketList from './TicketList';
-import { Switch, Route } from 'react-router-dom';
-import NewTicketForm from './NewTicketForm';
+import NewTicketControl from './NewTicketControl';
 import Error404 from './Error404';
+import { Switch, Route } from 'react-router-dom';
 
 function App(){
   var myStyledComponentStyles = {
@@ -16,11 +16,14 @@ function App(){
           div {
             padding: 10px;
           }
+          body {
+            background-color: #F08080;
+          }
     `}</style>
       <Header/>
       <Switch>
         <Route exact path='/' component={TicketList} />
-        <Route path='/newticket' component={NewTicketForm} />
+        <Route path='/newticket' component={NewTicketControl} />
         <Route component={Error404} />
       </Switch>
     </div>
@@ -28,24 +31,3 @@ function App(){
 }
 
 export default App;
-
-// <style jsx global>{`
-//     body {
-//       font-family: Helvetica;
-//     }
-//     .box {
-//       border: none;
-//       display: block;
-//       border-bottom: 2px solid #fff;
-//       margin-bottom: 10px;
-//     }
-//     .box:hover {
-//       border-bottom: 2px solid #ccc;
-//       outline: 0;
-//     }
-//     a {
-//       color: #888;
-//       text-decoration: none;
-//     }
-//
-// `}</style>

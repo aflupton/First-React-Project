@@ -4,17 +4,21 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <div>
-      <style jsx>{`
+      <style global jsx>{`
         h1 {
-          font-size: 28pt;
           font-style: italic;
         }
-        Link {
-          font-size: 16pt;
+        .header-btn {
+          background-color: inherit;
+          border: 2px, lightgrey;
+          opacity: 0.5;
+        }
+        .header-btn:hover {
+          opacity: 1;
         }
       `}</style>
-      <h1 className="header">Help Queue:</h1>
-      <Link className="link" to="/">Home</Link> | <Link className="link" to="/newticket">Create Ticket</Link>
+      <h1 className="header display-3">Help Queue:</h1>
+      <Link className="header-btn btn btn-light" to="/">Home</Link> | <Link className="header-btn btn btn-light" to="/newticket">Create Ticket</Link>
     </div>
   );
 }
