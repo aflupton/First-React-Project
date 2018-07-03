@@ -7,7 +7,7 @@ function Error404(props){
   console.log(props);
   return (
     <div>
-      <style jsx>{`
+      <style global jsx>{`
         .image {
           max-width: 75%;
         }
@@ -18,9 +18,9 @@ function Error404(props){
           margin-top: 25px;
         }
       `}</style>
-      <img className='image' src={CoffeeBrewing} />
-      <h3 className="">The page you are looking for is still brewing.</h3>
-      <h4>Would you like to return <Link to='/'>home</Link> instead?</h4>
+      <img className='image img-circle' src={CoffeeBrewing} />
+      <h3 className=''>The page you are looking for is still brewing.</h3>
+      <h4>Would you like to return <Link className="header-btn btn btn-light" to='/'>Home</Link> instead?</h4>
 
     </div>
   );

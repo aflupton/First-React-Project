@@ -1,18 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function NewTicketForm(){
+function NewTicketForm(props){
   let _names = null;
   let _location = null;
   let _issue = null;
 
   function handleNewTicketSubmission(event) {
-    console.log(_names.value);
-    console.log(_location.value);
-    console.log(_issue.value);
+    event.preventDefault();
+    props.onNewTicketCreation({names: _names.value, location: _location.value, issue: _issue.value});
     _names.value = '';
     _location.value = '';
     _issue.value = '';
-    event.preventDefault();
   }
 
   return (
@@ -21,6 +20,7 @@ function NewTicketForm(){
         input {
           padding: 5px;
           margin-right: 10px;
+          border-radius; 2px;
         }
         button {
           border: solid #ddd 2px;
@@ -34,7 +34,7 @@ function NewTicketForm(){
           width: 100%;
         }
       `}</style>
-      <form onSubmit={handleNewTicketSubmission}>
+      <form className='form-group' onSubmit={handleNewTicketSubmission}>
         <input
           type='text'
           id='names'
@@ -54,5 +54,9 @@ function NewTicketForm(){
     </div>
   );
 }
+
+NewTicketForm.propTypes = {
+  onNewTicketCreation: PropTypes.func
+};
 
 export default NewTicketForm;
