@@ -19,7 +19,7 @@ function Error404(props){
         }
       `}</style>
       <img className='image img-circle' src={CoffeeBrewing} />
-      <h3 className=''>The page you are looking for is still brewing.</h3>
+      <h3 className=''>The page {props.location.pathname} you are looking for is still brewing.</h3>
       <h4>Would you like to return <Link className="header-btn btn btn-light" to='/'>Home</Link> instead?</h4>
 
     </div>
