@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import CoffeeBrewing from '../assets/images/CoffeeBrewing.gif';
 
 function Error404(props){
-  console.log(props);
+  // console.log(props);
   return (
     <div>
       <style global jsx>{`

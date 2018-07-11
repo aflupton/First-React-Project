@@ -4,7 +4,7 @@ import TicketList from './TicketList';
 import NewTicketControl from './NewTicketControl';
 import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
-import Moment from 'moment';
+// import Moment from 'moment';
 import Admin from './Admin';
 import { v4 } from 'uuid';
 
@@ -40,7 +40,7 @@ class App extends React.Component {
   }
 
   handleAddingNewTicketToList(newTicket){
-    var newTicketId = v4()
+    var newTicketId = v4();
     var newMasterTicketList = Object.assign({}, this.state.masterTicketList, {
       [newTicketId]: newTicket
     });
@@ -53,7 +53,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.masterTicketList);
+    // console.log(this.state.masterTicketList);
     var myStyledComponentStyles = {
       backgroundColor: '#F08080',
       fontFamily: 'sans-serif',
@@ -73,8 +73,8 @@ class App extends React.Component {
           <Route exact path='/' render={()=><TicketList ticketList={this.state.masterTicketList} />} />
           <Route path='/newticket' render={()=><NewTicketControl onNewTicketCreation={this.handleAddingNewTicketToList} />} />
           <Route path='/admin' render={(props) => <Admin ticketList={this.state.masterTicketList} currentRouterPath={props.location.pathname}
-          onTicketSelection={this.handleChangingSelectedTicket}
-          selectedTicket={this.state.selectedTicket} />} />
+            onTicketSelection={this.handleChangingSelectedTicket}
+            selectedTicket={this.state.selectedTicket} />} />
           <Route component={Error404} />
         </Switch>
       </div>
