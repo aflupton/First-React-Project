@@ -66,6 +66,4 @@ function NewTicketForm(props){
   );
 }
 
-NewTicketForm = connect()(NewTicketForm);
-
-export default NewTicketForm;
+export default connect()(NewTicketForm);
