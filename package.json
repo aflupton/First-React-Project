@@ -21,13 +21,15 @@
   "homepage": "https://github.com/epicodus-lessons/Help-Queue-React#readme",
   "dependencies": {
     "install": "^0.12.1",
-    "moment": "^2.18.1",
+    "moment": "^2.22.2",
     "npm": "^6.1.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^15.5.4",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.0.0",
+    "redux": "^3.7.2",
     "styled-jsx": "^2.2.7",
     "uuid": "^3.2.1"
   },
