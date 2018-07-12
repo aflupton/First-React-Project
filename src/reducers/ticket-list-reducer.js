@@ -10,11 +10,12 @@ export default (state = {}, action) => {
           location: location,
           issue: issue,
           timeOpen: timeOpen,
-          id: id
+          id: id,
+          formattedWaitTime: formattedWaitTime
         }
     });
     return newState;
-    
+
   case 'UPDATE_TIME':
     const newTicket = Object.assign({}, state[id], {formattedWaitTime});
     newState = Object.assign({}, state, {

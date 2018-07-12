@@ -29,7 +29,7 @@ class App extends React.Component {
       const newFormattedWaitTime = ticket.timeOpen.fromNow(true);
       const action = {
         type: 'UPDATE_TIME',
-        id: id,
+        id: ticketId,
         formattedWaitTime: newFormattedWaitTime
       };
       dispatch(action);

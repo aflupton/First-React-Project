@@ -1,4 +1,5 @@
 import ticketListReducer from './../../src/reducers/ticket-list-reducer';
+import Moment from 'moment';
 
 describe('ticketListReducer', () => {
 
@@ -54,4 +55,28 @@ describe('ticketListReducer', () => {
       }
     });
   });
+
+  test('New ticket should include Moment-formatted wait time', () => {
+    const { names, location, issue, timeOpen, id } = sampleTicketData;
+    action = {
+      type: 'ADD_TICKET',
+      names: names,
+      location: location,
+      issue: issue,
+      timeOpen: timeOpen,
+      id: id,
+      formattedWaitTime: new Moment().fromNow(true)
+    };
+    expect(ticketListReducer({}, action)).toEqual({
+      [id]: {
+        names: names,
+        location: location,
+        issue: issue,
+        timeOpen: timeOpen,
+        id: id,
+        formattedWaitTime: 'a few seconds'
+      }
+    });
+  });
+
 });
