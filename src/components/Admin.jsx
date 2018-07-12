@@ -23,7 +23,7 @@ function Admin(props){
 Admin.propTypes = {
   ticketList: PropTypes.object,
   currentRouterPath: PropTypes.string.isRequired,
-  selectedTicket: PropTypes.object
+  selectedTicket: PropTypes.string
 };
 
 const mapStateToProps = state => {

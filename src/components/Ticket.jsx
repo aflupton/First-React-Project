@@ -27,11 +27,12 @@ function Ticket(props){
           color: #fff;
           border-width: 3px;
           opacity: 1;
+          cursor: pointer;
         }
       `}</style>
       <div className='card'>
         <h3>{props.location} - {props.names}</h3>
-        <h4>{props.formattedWaitTime}</h4>
+        <h4>{props.formattedWaitTime} ago</h4>
       </div>
     </div>;
   if (props.currentRouterPath === '/admin'){

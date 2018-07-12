@@ -2,8 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function TicketDetail(props){
+  var detailStyles = {
+    color: 'black',
+  };
   return (
-    <div>
+    <div style={detailStyles}>
+      <style>{`
+          
+    `}</style>
       <hr/>
       <h1>{props.selectedTicket.names} - {props.selectedTicket.location}</h1>
       <h2>Submitted {props.selectedTicket.formattedWaitTime} ago</h2>

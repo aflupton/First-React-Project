@@ -23,7 +23,7 @@ function TicketList(props){
 
 TicketList.propTypes = {
   ticketList: PropTypes.object,
-  currentRouterPath: PropTypes.string,
+  currentRouterPath: PropTypes.string
 };
 
 export default TicketList;
