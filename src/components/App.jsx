@@ -4,12 +4,12 @@ import TicketList from './TicketList';
 import NewTicketControl from './NewTicketControl';
 import Error404 from './Error404';
 import { Switch, Route, withRouter } from 'react-router-dom';
-import Moment from 'moment';
+// import Moment from 'moment';
 import Admin from './Admin';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import constants from './../constants';
-import { c } from constants;
+const { c } = constants;
 
 class App extends React.Component {
 
