@@ -1,4 +1,5 @@
-import c from './../constants';
+import constants from './../constants';
+import { c } from constants;
 
 export default (state = {}, action) => {
   switch (action.type) {

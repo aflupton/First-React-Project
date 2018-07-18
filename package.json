@@ -20,9 +20,10 @@
   },
   "homepage": "https://github.com/epicodus-lessons/Help-Queue-React#readme",
   "dependencies": {
+    "firebase": "^3.0.0",
     "install": "^0.12.1",
     "moment": "^2.22.2",
-    "npm": "^6.1.0",
+    "npm": "^6.2.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.2",
     "react-bootstrap": "^0.32.1",

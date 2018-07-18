@@ -2,7 +2,8 @@ import React from 'react';
 import Moment from 'moment';
 import { v4 } from 'uuid';
 import { connect } from 'react-redux';
-import c from './../constants';
+import constants from './../constants';
+import { c } from constants;
 
 function NewTicketForm(props){
   let _names = null;
