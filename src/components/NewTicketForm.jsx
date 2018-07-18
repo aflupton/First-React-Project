@@ -11,7 +11,7 @@ function NewTicketForm(props){
   let _location = null;
   let _issue = null;
 
-  function handleNewTicketSubmission(event) {
+  function handleNewTicketFormSubmission(event) {
     const { dispatch } = props;
     event.preventDefault();
     // const action = {
@@ -49,7 +49,7 @@ function NewTicketForm(props){
           width: 100%;
         }
       `}</style>
-      <form className='form-group' onSubmit={handleNewTicketSubmission}>
+      <form className='form-group' onSubmit={handleNewTicketFormSubmission}>
         <input
           type='text'
           id='names'
