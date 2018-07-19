@@ -3,8 +3,8 @@ const { firebaseConfig, c } = constants;
 import Firebase from 'firebase';
 import Moment from 'moment';
 
-firebase.initializeApp(firebaseConfig);
-const tickets = firebase.database().ref('tickets');
+Firebase.initializeApp(firebaseConfig);
+const tickets = Firebase.database().ref('tickets');
 
 export function addTicket(_names, _location, _issue) {
   return () => tickets.push({

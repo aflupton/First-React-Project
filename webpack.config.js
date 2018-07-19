@@ -58,14 +58,16 @@ module.exports = {
       },
       {
         test: /\.(png|gif|jp(e*)g|svg)$/,
+        include: SRC,
         use: {
           loader: 'url-loader',
           options: {
-            limit: 8000,
-            name: 'images/[hash]-[name].[ext]'
+            limit: 100000,
+            name: 'images/[name].[ext]'
           }
         }
-      }
+      },
+
     ]
   },
 
