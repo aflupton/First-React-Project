@@ -16,7 +16,7 @@ Clone the repository from Github, navigate to the project directory in your term
 
 ## Contact
 
-For any further questions, email Andrew Lupton at mailto:aflupton@gmail.com.
+For any further questions, email Andrew Lupton at ```mailto:aflupton@gmail.com```.
 
 ### License
 
